@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viktor's independent work</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link media="all" rel="stylesheet" href="css/main.css">
+    <script src="js/my_first.js"></script>
+</head>
+<body>	
+    <div>
+        <header>    
+        </header>
+        <main class="main-class">
+            <form class="student-form container">
+                <h1 class="title1"> Practical task #1</h1>
+                <h2 class="title2"> Please enter information about student:</h2>
+                <ul class="form-list">
+                   <li class="form-list-item">
+                        First Name: 
+                        <input id="firstName" class="form-input" type="text" value="First Name">
+                    </li>
+                    <li class="form-list-item">
+                        Last Name:
+                        <input id="lastName" class="form-input" type="text" value="Last Name">
+                    </li>
+                    <li class="form-list-item">
+                        Age:
+                        <input id="studentAge" class="form-input" type="number" max="100" min="18" value="25">
+                    </li>
+                    <li class="form-list-item">
+                        City
+                        <input id="studentCity" class="form-input" type="text" value="Kharkov">
+                    </li>
+                    <li class="form-list-item">
+                        Has a laptop:
+                        <input id="studentLP" class="form-input" type="text" value="true/false">
+                    </li>
+                    <li class="form-list-item">
+                        <input class="form-submit" type="button" value="Add new record" onclick="addNewStudent();">
+                    </li>
+                </ul>
+                <table class="list-of-student" id="students">
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Age Name</th>
+                        <th>City Name</th>
+                        <th>Has a laptop</th >
+                    </tr>
+                </table>                
+            </form>
+        </main>
+        <footer>
+        </footer>		
+    </div>
+</body>	
+</html>
