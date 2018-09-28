@@ -67,10 +67,14 @@ body {
 	margin: 0 15px 0 15px;
 }
 
-table{
+table tr{
     border: 1px solid black;
     border-collapse:collapse;
     border-spacing:0px;
+}
+
+th{
+    border: 1px solid black;
 }
 
 td { 
