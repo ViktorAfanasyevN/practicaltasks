@@ -1,36 +1,26 @@
-var my_students = [{
-    firstName: "Alex",
-    lastName: "Bob",
-    age: "25",
-    city: "Kharkov",
-    laptop : true
-}];
+var my_students = [];
 
 function addNewStudent() {  
     var tbl = document.getElementById('students');
-    var tblBody = document.createElement("tbody");
+    var tblBody = document.getElementById("student");
+    var row = document.createElement("tr");
+	
+	var result = {};
+	var inputs = document.getElementsByClassName('form-input');
+	for (var i = 0; i < inputs.length; i++) {
+		result[inputs[i].getAttribute('data-id')] = inputs[i].value;
+	}
+	my_students.push(result);
     
-   var newStudent = [{
-        firstName: document.getElementById('firstName').value,
-        lastName: document.getElementById('lastName').value,
-        age: document.getElementById('studentAge').value,
-        city: document.getElementById('studentCity').value,
-        laptop: document.getElementById('studentLP').value
-    }];
-    my_students.push(newStudent)
-    for ( var student of newStudent ) {
-        var row = document.createElement("tr");
-        for ( var details in student ) {
-            var cell = document.createElement("td");
-            var cellText = document.createTextNode(student[details]);
-            cell.appendChild(cellText);
-            row.appendChild(cell);           
-        }
-        tblBody.appendChild(row);
+    for ( var details in my_students[my_students.length-1] ) {
+        var cell = document.createElement("td");
+        var cellText = document.createTextNode(my_students[my_students.length-1][details]);
+        cell.appendChild(cellText);
+        row.appendChild(cell);           
     }
-      tbl.appendChild(tblBody);
-  tbl.setAttribute("border", "1");
-}
+    tblBody.appendChild(row);
+	tbl.setAttribute("border", "1");
+ }
 
 
 

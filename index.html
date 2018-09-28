@@ -10,8 +10,8 @@
 </head>
 <body>	
     <div>
-        <header>    
-        </header>
+		<header>    
+		</header>
         <main class="main-class">
             <form class="student-form container">
                 <h1 class="title1"> Practical task #1</h1>
@@ -19,23 +19,23 @@
                 <ul class="form-list">
                    <li class="form-list-item">
                         First Name: 
-                        <input id="firstName" class="form-input" type="text" value="First Name">
+                        <input class="form-input" data-id="firstName" type="text" value="First Name">
                     </li>
                     <li class="form-list-item">
                         Last Name:
-                        <input id="lastName" class="form-input" type="text" value="Last Name">
+                        <input id="lastName" class="form-input" data-id="lastName" type="text" value="Last Name">
                     </li>
                     <li class="form-list-item">
                         Age:
-                        <input id="studentAge" class="form-input" type="number" max="100" min="18" value="25">
+                        <input id="studentAge" class="form-input" data-id="studentAge" type="number" max="100" min="18" value="25">
                     </li>
                     <li class="form-list-item">
                         City
-                        <input id="studentCity" class="form-input" type="text" value="Kharkov">
+                        <input id="studentCity" class="form-input" data-id="studentCity" type="text" value="Kharkov">
                     </li>
                     <li class="form-list-item">
                         Has a laptop:
-                        <input id="studentLP" class="form-input" type="text" value="true/false">
+                        <input id="studentLP" class="form-input" data-id="studentLP" type="text" value="true/false">
                     </li>
                     <li class="form-list-item">
                         <input class="form-submit" type="button" value="Add new record" onclick="addNewStudent();">
@@ -49,6 +49,7 @@
                         <th>City Name</th>
                         <th>Has a laptop</th >
                     </tr>
+					<tbody id="student"/>
                 </table>                
             </form>
         </main>

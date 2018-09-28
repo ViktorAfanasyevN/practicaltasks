@@ -29,7 +29,7 @@ body {
     border-style: solid;
     word-wrap:normal;
     display: inline-flex;
-    flex-direction: column
+    flex-direction: column;
 }
 
 .form-list {
@@ -63,7 +63,7 @@ body {
 }
 
 .list-of-student {
-
+	margin: 0 15px 0 15px;
 }
 
 table{
@@ -73,9 +73,9 @@ table{
 }
 
 td { 
-padding:0px; 
+padding:5px; 
 border-width:1px; 
-margin:0px; 
+margin:0px;
 }
 
 #students {
