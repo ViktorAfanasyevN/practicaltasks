@@ -12,6 +12,25 @@ body {
 	padding: 0 15px 0 15px;
 }
 
+button {
+    border-radius: 26px;
+    font-size: 14px;
+    border-style: ridge;
+    background: #e4f0fd;
+    letter-spacing:1px;
+    color: rgb(1,125,251);
+    transition: all 0.3s ease 0s;
+    height: 30px;
+    max-width: 250px;
+    margin: 15px 0 0 15px;
+}
+
+button:hover {
+  background-color: darkgray;
+  box-shadow: 0px 10px 70px #e4f0fd;
+  color: aquamarine;
+}
+
 .container {
 	width: 98%;
 }
@@ -27,9 +46,25 @@ body {
 .student-form {
     background-color: aliceblue;
     border-style: solid;
-    word-wrap:normal;
     display: inline-flex;
     flex-direction: column;
+}
+
+.table-container {
+    border-style: solid;
+    max-height: 150px;
+    display: inline-flex;
+    flex-direction: column;  
+    margin: 0 15px 0 15px;
+    overflow:auto;
+}
+
+#stringStudentList {
+    border-style: solid;
+    max-height: 150px;
+    word-wrap: inherit;
+    margin: 15px 15px 0 15px;
+    overflow:auto;  
 }
 
 .form-list {
@@ -55,16 +90,12 @@ body {
 
 .form-input {
     font-size: 12px;
-	margin: 0 15px 0 15px;
+    margin: 0 15px 0 15px;
 }
 
 .form-submit {
    font-size: 16px;
    font-weight: bold;
-}
-
-.list-of-student {
-	margin: 0 15px 0 15px;
 }
 
 table tr{
@@ -84,6 +115,11 @@ margin:0px;
 }
 
 #students {
-    border: 1px solid black;   
+    border: 1px solid black; 
+}
+
+p {
+    margin: 0;
+    padding: 0;
 }
 
